@@ -5,7 +5,7 @@ Built as an educational project.
 
 ### Usage
 ```javascript
-let request = new vjax({
+let request = vjax.request({
     url: 'somewhere.com',
     method: 'POST',
     data: {
@@ -23,8 +23,21 @@ let request = new vjax({
     onResponse: (response) => {
         console.log('Plain Text: ', response.text);
         console.log('JSON: ', response.json);
+    },
+    onAbort: () => {
+        console.log('Request Aborted');
+    },
+    onError: (e) => {
+        console.error(e);
     }
 })
+
+// All Lifecycle Methods are Optional.
+
+// Alternative Methods :-
+// - Parameters, Same as Above excluding "method" Property
+vjax.get();
+vjax.post();
 ```
 
 ### Basic Example
@@ -44,7 +57,7 @@ let request = new vjax({
             const btn = document.getElementById('call_api');
             const resArea = document.getElementById('response');
             btn.onclick = () => {
-                const request = new vjax({
+                const request = vjax.request({
                     url: 'https://jsonplaceholder.typicode.com/todos/',
                     method: 'GET',
                     data: {
