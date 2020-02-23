@@ -22,7 +22,7 @@ let request = new vjax({
     },
     onResponse: (response) => {
         console.log('Plain Text: ', response.text);
-        console.log('JSON: ', response.json_data);
+        console.log('JSON: ', response.json);
     }
 })
 ```
