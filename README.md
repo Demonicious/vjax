@@ -1,5 +1,5 @@
 ### VJAX
-Vanilla JavaScript AJAX but Quicker.
+Vanilla JavaScript AJAX but not as messy. 4KB File Size (Minified). 
 Similar to jQuery AJAX.
 Built as an educational project.
 
