@@ -3,6 +3,12 @@ Vanilla JavaScript AJAX but not as messy. 4KB File Size (Minified).
 Similar to jQuery AJAX.
 Built as an educational project.
 
+### CDN (jsDelivr)
+```html
+<script src="https://cdn.jsdelivr.net/gh/Demonicious/vjax@latest/lib/vjax.min.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/gh/Demonicious/vjax@latest/lib/vjax.js" type="text/javascript"></script>
+```
+
 ### Usage
 ```javascript
 let request = vjax.request({
