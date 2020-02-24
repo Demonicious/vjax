@@ -58,7 +58,7 @@ vjax.post();
         <pre id="response"></pre>
     </div>
     <footer>
-        <script src="vjax.min.js" type="text/javascript"></script>
+        <script src="https://cdn.jsdelivr.net/gh/Demonicious/vjax@latest/lib/vjax.min.js"></script>
         <script type="text/javascript">
             const btn = document.getElementById('call_api');
             const resArea = document.getElementById('response');
