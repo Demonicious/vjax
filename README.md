@@ -30,7 +30,7 @@ let request = vjax.request({
     onError: (e) => {
         console.error(e);
     }
-})
+});
 
 // All Lifecycle Methods are Optional.
 
@@ -76,7 +76,7 @@ vjax.post();
                         resArea.innerText = response.text;
                         console.log(response.json);
                     }
-                })
+                });
             }
         </script>
     </footer>
