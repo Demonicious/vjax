@@ -12,6 +12,7 @@
         <script type="text/javascript">
             const btn = document.getElementById('call_api');
             const resArea = document.getElementById('response');
+            const vjax = VJAX();
             btn.onclick = () => {
                 const request = vjax.request({
                     url: 'https://jsonplaceholder.typicode.com/todos/',
